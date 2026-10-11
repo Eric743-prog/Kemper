@@ -1,7 +1,7 @@
 "use strict";
 
 // Add a verified public address here to enable project enquiries.
-const contactEmail = "";
+const contactEmail = "daniel.kemper@stud.hs-coburg.de";
 
 const legalDialog = document.querySelector("#legal-dialog");
 const projectDetails = document.querySelector("#project-details");
@@ -342,7 +342,7 @@ viewport.addEventListener("click", (event) => {
 }, true);
 
 if (!reducedMotion.matches && "IntersectionObserver" in window) {
-  const revealElements = document.querySelectorAll(".hero-topline, .hero h1, .hero-bottom, .hero-carousel, .section-label, .section-heading, .project, .profile-image, .profile-copy, .services h2, .service-list > div, .contact h2, .contact-bottom");
+  const revealElements = document.querySelectorAll(".hero-topline, .hero h1, .hero-bottom, .hero-carousel, .section-label, .section-heading, .project, .profile-image, .profile-copy, .services h2, .service-list > div, .timeline-item, .skills h2, .skills-subtitle, .skill-card, .tool-group, .contact h2, .contact-bottom");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) reveal(entry.target);
@@ -356,7 +356,7 @@ if (!reducedMotion.matches && "IntersectionObserver" in window) {
 
   revealElements.forEach((element) => {
     element.classList.add("reveal", "reveal-pending");
-    if (element.matches(".project, .service-list > div")) {
+    if (element.matches(".project, .service-list > div, .skill-card")) {
       const siblings = [...element.parentElement.children];
       element.style.setProperty("--reveal-delay", `${(siblings.indexOf(element) % 3) * 80}ms`);
     }

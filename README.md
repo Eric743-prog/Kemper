@@ -12,7 +12,7 @@ Die vollständige Anleitung zum Austauschen von Texten und Bildern sowie zum Hin
 
 - Einstieg, Profil und kreative Felder: [index.html](./index.html).
 - Gemeinsame Projekttexte, Bilder, Credits, Portfolio-Karten und Kapitelreihenfolge: [projects.js](./projects.js). Portfolio-Galerien und Storybuch verwenden dieselben Projektdaten.
-- Öffentliche Kontaktadresse und Portfolio-Interaktionen: [portfolio.js](./portfolio.js). `contactEmail` ist zunächst leer; es gibt bewusst kein funktionsloses Anfrageformular. Nach Eintragung einer gültigen Adresse erscheint ein E-Mail-Link.
+- Öffentliche Kontaktadresse und Portfolio-Interaktionen: [portfolio.js](./portfolio.js). `contactEmail` enthält die E-Mail-Adresse für den Kontaktlink; bleibt sie leer, entfällt der Link. Adresse und Telefonnummer stehen direkt im Kontaktbereich von [index.html](./index.html), ebenso Werdegang und Fähigkeiten.
 - Farben, Layout und responsive Ansichten: [styles.css](./styles.css).
 - Weboptimierte Bildkopien: [assets](./assets). Die bereitgestellten Originale unter [input](./input) bleiben unverändert.
 
