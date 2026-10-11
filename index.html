@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaff5b">
+  <meta name="description" content="Daniel Kemper – ausgewählte Arbeiten zwischen Produktdesign, Fotografie, Illustration und visueller Gestaltung.">
+  <title>Daniel Kemper — Design & visuelle Welten</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script src="settings.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#arbeiten">Zum Inhalt</a>
+  <header class="header">
+    <a class="wordmark" href="#start" aria-label="Daniel Kemper – Startseite">DK<span class="wordmark-dot" aria-hidden="true">✳</span></a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#arbeiten">Arbeiten <span>↗</span></a>
+      <a href="#profil">Profil <span>↗</span></a>
+      <a class="nav-contact" href="#kontakt">Projekt anfragen <span>↗</span></a>
+      <a class="nav-settings" data-settings-link href="settings.html" aria-label="Einstellungen" title="Einstellungen"><span aria-hidden="true">⚙</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="hero-topline"><span>Daniel Kemper / Kreatives Portfolio</span><span>Design. Bild. Experiment.</span></div>
+      <h1 id="hero-title">Andere<br><span class="outline">Perspektiven.</span></h1>
+      <img class="hero-portrait" src="assets/hero-portrait.png" alt="" aria-hidden="true">
+      <div class="hero-bottom">
+        <div><p>Von der ersten Linie bis zur neuen visuellen Welt.<br>Produktdesign, Fotografie & freie Gestaltung.</p><a class="text-link hero-story-link" href="storybook.html">Das Projekt-Storybuch öffnen <span>↗</span></a></div>
+        <a class="round-link" href="#arbeiten" aria-label="Ausgewählte Arbeiten entdecken">↓</a>
+      </div>
+      <div class="hero-carousel" role="region" aria-roledescription="Karussell" aria-label="Einblicke in die Arbeiten">
+        <div class="carousel-viewport" id="hero-slides" tabindex="0" aria-label="Bildauswahl – mit Pfeiltasten wechseln">
+          <div class="collage carousel-slide" role="group" aria-roledescription="Folie" aria-label="1 von 3 – Produktdesign & Konstruktion" data-title="Produktdesign & Konstruktion">
+            <figure class="collage-main"><button class="carousel-project contain" type="button" data-project="coffee" aria-label="Kaffeebereiter – Explosionsdarstellung ansehen"><img src="assets/coffee-exploded.jpg" alt="Explosionsdarstellung des gläsernen Kaffeebereiters" fetchpriority="high"></button><figcaption>Kaffeebereiter / Explosionsdarstellung</figcaption></figure>
+            <figure class="collage-detail"><button class="carousel-project contain" type="button" data-project="cutaway" aria-label="Baugruppe im Schnitt ansehen"><img src="assets/cutaway.jpg" alt="Farbige CAD-Schnittansicht mit Filterstruktur und inneren Komponenten"></button><figcaption>Baugruppe / Schnittansicht</figcaption></figure>
+            <figure class="collage-accent"><button class="carousel-project contain" type="button" data-project="chair" aria-label="Skulpturales Sitzen ansehen"><img src="assets/chair.jpg" alt="Rendering eines weißen Loungesessels"></button><figcaption>Sitzobjekt / Formstudie</figcaption></figure>
+          </div>
+          <div class="collage carousel-slide" role="group" aria-roledescription="Folie" aria-label="2 von 3 – Fotografie & Perspektive" data-title="Fotografie & Perspektive" hidden>
+            <figure class="collage-main"><button class="carousel-project" type="button" data-project="coast" aria-label="Letztes Licht ansehen"><img src="assets/coast.jpg" alt="Felsige Küste im goldenen Abendlicht" loading="lazy"></button><figcaption>Landschaft / Letztes Licht</figcaption></figure>
+            <figure class="collage-detail"><button class="carousel-project" type="button" data-project="berlin" aria-label="Zwischen den Linien ansehen"><img src="assets/berlin.jpg" alt="Sonnenuntergang über der Spree hinter diagonalen Streben" loading="lazy"></button><figcaption>Berlin / Zwischen den Linien</figcaption></figure>
+            <figure class="collage-accent"><img src="assets/portrait.jpg" alt="Selbstporträt mit Kamera und Spiegelungen" loading="lazy"><figcaption>Porträt / Spiegelungen</figcaption></figure>
+          </div>
+          <div class="collage carousel-slide" role="group" aria-roledescription="Folie" aria-label="3 von 3 – Grafik & freie Gestaltung" data-title="Grafik & freie Gestaltung" hidden>
+            <figure class="collage-main"><button class="carousel-project contain" type="button" data-project="aquifer" aria-label="Aquifer ansehen"><img src="assets/aquifer.jpg" alt="Aquifer-Logo mit Tropfen- und Wellenmotiv" loading="lazy"></button><figcaption>Aquifer / Visuelle Identität</figcaption></figure>
+            <figure class="collage-detail"><button class="carousel-project" type="button" data-project="cyanotype" aria-label="In Blau ansehen"><img src="assets/cyanotype.jpg" alt="Blaues experimentelles Porträt" loading="lazy"></button><figcaption>In Blau / Bildexperiment</figcaption></figure>
+            <figure class="collage-accent"><button class="carousel-project" type="button" data-project="stars" aria-label="Latest Stars ansehen"><img src="assets/stars.jpg" alt="Latest Stars – Cover mit vernetzten Sternen" loading="lazy"></button><figcaption>Latest Stars / Covergestaltung</figcaption></figure>
+          </div>
+        </div>
+        <div class="carousel-controls" hidden>
+          <p class="carousel-label"><span id="carousel-count">01 / 03</span><span id="carousel-title">Produktdesign & Konstruktion</span></p>
+          <div class="carousel-navigation">
+            <button type="button" class="carousel-arrow" id="carousel-prev" aria-label="Vorherige Bildauswahl" aria-controls="hero-slides">←</button>
+            <div class="carousel-dots" role="group" aria-label="Bildauswahl auswählen">
+              <button type="button" data-slide="0" aria-label="Produktdesign & Konstruktion" aria-pressed="true"></button>
+              <button type="button" data-slide="1" aria-label="Fotografie & Perspektive" aria-pressed="false"></button>
+              <button type="button" data-slide="2" aria-label="Grafik & freie Gestaltung" aria-pressed="false"></button>
+            </div>
+            <button type="button" class="carousel-arrow" id="carousel-next" aria-label="Nächste Bildauswahl" aria-controls="hero-slides">→</button>
+          </div>
+        </div>
+        <p class="sr-only" id="carousel-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+    </section>
+    <div class="discipline-line" aria-hidden="true"><span>Form & Funktion</span><span>Licht & Farbe</span><span>Idee & Experiment</span></div>
+    <section class="work-section section" id="arbeiten" aria-labelledby="work-title">
+      <div class="section-label"><span>01 / Ausgewählte Arbeiten</span><span>Disziplinen im Dialog</span></div>
+      <div class="section-heading"><h2 id="work-title">Nicht nur eine<br><em>Richtung.</em></h2><p>Objekte, Bilder und visuelle Identitäten.<br>Eine Auswahl aus unterschiedlichen kreativen Welten.</p></div>
+      <div class="filters" role="group" aria-label="Arbeiten nach Disziplin filtern">
+        <button type="button" class="active" data-filter="all" aria-pressed="true">Alle <span>11</span></button>
+        <button type="button" data-filter="design" aria-pressed="false">Produktdesign</button>
+        <button type="button" data-filter="photo" aria-pressed="false">Fotografie</button>
+        <button type="button" data-filter="graphic" aria-pressed="false">Grafik & Illustration</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite">11 Arbeiten angezeigt.</p>
+      <div class="project-grid">
+        <article class="project-details" id="project-details" hidden aria-labelledby="project-details-title">
+          <div class="project-details-inner">
+            <div class="dialog-top"><span id="project-details-category"></span><button class="project-details-close" type="button">Projekt schließen ✕</button></div>
+            <div class="dialog-intro"><h2 id="project-details-title" tabindex="-1"></h2><p id="project-details-description"></p></div>
+            <div id="project-details-gallery" class="dialog-gallery"></div>
+            <p class="dialog-note" id="project-details-note"></p>
+          </div>
+        </article>
+      </div>
+      <noscript><p>Alle Arbeiten sind hier sichtbar. Für Filter und Projektgalerien bitte JavaScript aktivieren.</p></noscript>
+    </section>
+    <section class="profile-section section" id="profil" aria-labelledby="profile-title">
+      <div class="section-label"><span>02 / Der Blick dahinter</span><span>Daniel Kemper</span></div>
+      <div class="profile-layout">
+        <div class="profile-image"><img src="assets/portrait.jpg" alt="Selbstporträt mit Kamera und Spiegelungen" loading="lazy"><span class="profile-tag">Neugier als Ausgangspunkt.</span></div>
+        <div class="profile-copy"><h2 id="profile-title">Zwischen<br><em>Präzision</em><br>und Intuition.</h2><p class="large-copy">Ich denke in Formen, beobachte in Bildern und experimentiere mit dem, was dazwischen liegt.</p><p>Meine Arbeiten bewegen sich zwischen Produktentwurf, Fotografie und visueller Gestaltung. Dieses Portfolio verbindet konstruktive Details mit freien Bildwelten – und zeigt verschiedene Wege von einer Idee zu ihrem Ausdruck.</p><a class="text-link" href="#kontakt">Gemeinsam etwas Neues gestalten <span>↗</span></a></div>
+      </div>
+    </section>
+    <section class="services section" aria-labelledby="services-title">
+      <div class="section-label"><span>03 / Kreative Felder</span><span>Von der Idee zum Ausdruck</span></div>
+      <h2 id="services-title">Was wir gestalten können.</h2>
+      <div class="service-list">
+        <div><span>01</span><h3>Produkt & Form</h3><p>Entwurf · Formstudien · CAD-Visualisierung</p><span aria-hidden="true">↗</span></div>
+        <div><span>02</span><h3>Bild & Atmosphäre</h3><p>Fotografie · Bildbearbeitung · Visuelle Serien</p><span aria-hidden="true">↗</span></div>
+        <div><span>03</span><h3>Grafik & Identität</h3><p>Logogestaltung · Illustration · Artwork</p><span aria-hidden="true">↗</span></div>
+      </div>
+    </section>
+    <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+      <div class="section-label"><span>04 / Nächste Perspektive</span><span>Neue Ideen beginnen im Austausch</span></div>
+      <h2 id="contact-title">Eine Idee?<br><em>Lass uns reden.</em><span aria-hidden="true">↗</span></h2>
+      <div class="contact-bottom"><p>Für kreative Projekte, neue Perspektiven<br>und die Lust, etwas Eigenes zu gestalten.</p><div id="contact-action"><span class="contact-pending">Kontakt folgt</span><p class="contact-note">Die Kontaktadresse wird noch ergänzt.<br>Projektanfragen sind hier derzeit nicht möglich.</p></div></div>
+    </section>
+  </main>
+  <footer><a class="footer-name" href="#start">Daniel Kemper</a><span>Design & visuelle Welten</span><button id="legal-open" type="button">Hinweise zur Website</button><a href="#start">Nach oben ↑</a></footer>
+  <dialog id="legal-dialog" aria-labelledby="legal-title">
+    <div class="dialog-top"><span>Website-Status</span><button class="dialog-close" type="button" aria-label="Hinweise schließen">Schließen ✕</button></div>
+    <div class="legal-content"><h2 id="legal-title">Noch nicht zur Veröffentlichung bestimmt.</h2><p>Dies ist ein lokaler Portfolio-Entwurf. Eine öffentliche Kontaktadresse sowie die erforderlichen Angaben für Impressum und Datenschutz sind noch nicht eingerichtet.</p><p>Es werden keine externen Schriftarten, Analysewerkzeuge, Cookies oder eingebetteten Drittanbieterinhalte verwendet. Bei einer Veröffentlichung müssen insbesondere das Hosting und dessen Datenverarbeitung berücksichtigt werden.</p><p>Projektbeschreibungen und einige Titel sind redaktionelle Entwürfe auf Grundlage der bereitgestellten Bilder. Rollen, Mitwirkende, Bildrechte und mögliche KI-Bearbeitungen müssen vor Veröffentlichung bestätigt werden.</p></div>
+  </dialog>
+</body>
+</html>

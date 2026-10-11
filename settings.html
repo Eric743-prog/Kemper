@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e7eaf0">
+  <meta name="description" content="Einstellungen für Sprache und Darstellung des Daniel-Kemper-Portfolios.">
+  <title>Einstellungen — Daniel Kemper</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <script src="settings.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="settings-page">
+  <a class="skip-link" href="#settings-content" data-i18n="skip">Zu den Einstellungen</a>
+  <header class="header">
+    <a class="wordmark" href="index.html" data-i18n-aria-label="homeLabel" aria-label="Daniel Kemper – Startseite">DK<span class="wordmark-dot" aria-hidden="true">✳</span></a>
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html" data-i18n="backToPortfolio">Zum Portfolio <span>↗</span></a>
+    </nav>
+  </header>
+  <main class="settings-main" id="settings-content">
+    <div class="settings-heading">
+      <div>
+        <p class="settings-eyebrow" data-i18n="eyebrow">Daniel Kemper / Portfolio</p>
+        <h1 data-i18n="title">Deine<br><em>Einstellungen.</em></h1>
+      </div>
+      <p data-i18n="intro">Passe Sprache und Darstellung an. Deine Auswahl wird auf diesem Gerät gespeichert.</p>
+    </div>
+    <section class="settings-panel" aria-labelledby="language-title">
+      <div class="settings-group">
+        <h2 id="language-title" data-i18n="languageTitle">Sprache</h2>
+        <div>
+          <label class="settings-control-label" for="language-select" data-i18n="languageLabel">Website-Sprache</label>
+          <select class="settings-select" id="language-select" name="language">
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+          <p class="settings-help" data-i18n="languageHelp">Wähle Deutsch, Spanisch oder Englisch für die Website aus.</p>
+        </div>
+      </div>
+      <div class="settings-group">
+        <h2 data-i18n="appearanceTitle">Darstellung</h2>
+        <div>
+          <label class="theme-toggle" for="dark-mode">
+            <span class="theme-toggle-copy"><span data-i18n="darkMode">Dunkelmodus</span><small data-i18n="darkModeHelp">Reduziert helle Flächen für eine angenehmere Ansicht bei wenig Licht.</small></span>
+            <input id="dark-mode" name="dark-mode" type="checkbox" role="switch" aria-describedby="dark-mode-help">
+            <span class="theme-toggle-visual" aria-hidden="true"></span>
+          </label>
+          <p class="settings-help" id="dark-mode-help" data-i18n="appearanceHelp">Du kannst jederzeit zum hellen Design zurückwechseln.</p>
+        </div>
+      </div>
+    </section>
+    <p class="settings-status" id="settings-status" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
